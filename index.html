@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>French Words</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+
+  <div class="search-wrapper">
+    <div class="logo">
+      <p>french words</p>
+    </div>
+    <form id="translate">
+      <input name="word" type="text" placeholder="Type English Word Here" autofocus><button type="submit"></button>
+      <section class="result">
+      <h2 class='translation'></h2>
+      <p class="gender"></p>
+      <button type="reset" class="encore hidden">encore encore!</button>
+      </section>
+      <section class="not-found hidden">
+        <h2 class="not-found_header">
+          Désolé ma chérie!
+        </h2>
+        <p>I could not find the word you are looking for, and now I am coming for you!</p>
+        <div class="not-found_graphic">
+          <img src="images/pepe.png" alt="monsieur le pew">
+          <button type="reset">essayez encore!</button>
+        </div>
+      </section>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="public/main.js" charset="utf-8"></script>
+</body>
+</html>

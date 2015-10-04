@@ -1,0 +1,144 @@
+// Variables
+$bgGrey: #EEE;
+$pink: #FBB0AA;
+$whiteHue: #FFF4ED;
+$txtGrey: #B2B2B2;
+$txtBlack: #2C2C2C;
+$searchHeight: 50px;
+
+
+html                 { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body {
+  font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
+  font-size:16px;
+  margin:0;
+  padding:0;
+  background: $bgGrey;
+    font-weight: lighter;
+}
+
+button {
+  cursor:pointer;
+  transition: background-color .3s ease, color .3s ease;
+  &:hover {
+     transition: background-color .3s ease, color .3s ease;
+  }
+}
+
+.search-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  width: 75%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: $pink;
+  font-size: 32px;
+  text-transform: lowercase;
+  font-style: italic;
+  margin: 30px auto;
+  position: relative;
+  color: $whiteHue;
+
+  p {
+    position: absolute;
+    line-height: 22px;
+    left: 0%;
+    top: 5%;
+    }
+  }
+
+
+input[name="word"] {
+  font-size: 14px;
+  width: 100%;
+  height: $searchHeight;
+  padding: 10px;
+  border: 1px solid $whiteHue;
+  &:focus {
+    outline: $pink auto 1px;
+  }
+}
+
+button[type="submit"] {
+  border: 1px solid $whiteHue;
+  position: absolute;
+  right: 0;
+  line-height: $searchHeight;
+  width: $searchHeight;
+  font-size: 16px;
+  padding: 0;
+  background-color: $pink;
+  color: #FFF4ED;
+  &:hover {
+    background: $whiteHue;
+    color: $pink;
+  }
+  &::before {
+    font-family: "FontAwesome";
+    content: "\f002";
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.translation, .not-found_header {
+  font-size: 44px;
+  color: $txtBlack;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.translation + p, .not-found_header + p {
+  font-family: "Helvetica Nue", sans-serif;
+  font-size: 20px;
+  color: $txtGrey;
+}
+
+.not-found_header {
+  font-size: 32px;
+}
+
+.not-found_graphic {
+  position: relative;
+}
+button[type="reset"] {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-size: 26px;
+  background-color: $whiteHue;
+  color: $pink;
+  font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
+  font-style: italic;
+  line-height:18px;
+  border: 1px solid $pink;
+  transform:rotate(-20deg);
+  &:hover {
+    background: $pink;
+    color: $whiteHue;
+  }
+}
+
+button.encore {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+
+.hidden {
+  display: none;
+}
