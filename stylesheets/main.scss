@@ -91,12 +91,13 @@ button[type="submit"] {
   }
 }
 
-.translation, .not-found_header {
+.translation, .not-found-header {
   font-size: 44px;
   color: $txtBlack;
   margin-bottom: 0;
   font-weight: lighter;
 }
+
 
 .translation + p, .not-found_header + p {
   font-family: "Helvetica Nue", sans-serif;
@@ -136,8 +137,10 @@ button.encore {
   position: relative;
   top: auto;
   left: auto;
+  &:focus {
+    outline:none;
+  }
 }
-
 
 .hidden {
   display: none;
