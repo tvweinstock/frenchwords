@@ -145,3 +145,14 @@ button.encore {
 .hidden {
   display: none;
 }
+
+@media (max-width: 500px) {
+  .search-wrapper {
+    width: 80%;
+    margin: 5px auto;
+  }
+  button[type="reset"] {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
